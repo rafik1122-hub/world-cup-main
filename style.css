@@ -1,0 +1,88 @@
+/*----------
+         top-1 style section
+              ------------*/
+    .container{
+    margin: 10px 100px;
+        color: white;
+       
+        justify-content: center;
+        align-items: center;
+    }
+    .top-1{ 
+        background-color: black;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+     
+      padding: 20px;
+     } 
+     h1{
+        font-size: 40px;
+     }
+     .top-1-blog{
+        width: 50%;
+        align-items: center;
+     }   
+     .top-1-image{
+        display: flex;
+        justify-content: baseline;
+     } 
+
+     .live-link{
+        display: flex;
+        background-color: chartreuse;
+        align-items: center;
+        color: rgb(255, 0, 0);
+        width: fit-content;
+        padding:2px 10px;
+        border-radius: 10px 10px 5em;
+     }
+     .fa-solid{
+        margin-left: 10px;
+     }
+     .top-1-blog:hover .live-link {
+        background-color: rgb(38, 0, 255);
+        font-size: 20px;
+     }
+     /*----------
+              top 1 style end
+                     ---------------*/
+
+ /*---------------
+        top 2 section style start
+            ---------------------*/
+            .top-2{
+                display: flex;
+            }
+            .summary-item
+            {
+                background-color: rgb(107, 57, 57);
+                width:30%;
+                padding: 10px 20px;
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .summary-item a{
+                width: 50px;
+                padding: 10px 0px;
+                margin: 20px;
+               
+                text-decoration: none;
+                margin: 10px;
+                align-items: center;
+
+            }
+            .upcoming , .group-page , .blog-page {
+                margin: 5px 0;
+                padding: 5px;
+                background-color: azure;
+                border-radius: 10px 10px;
+            }
+            .blogs{
+                width: 75%;
+                margin-left: 20px;
+                background-color: aqua;
+            }
