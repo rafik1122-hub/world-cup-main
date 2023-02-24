@@ -2,13 +2,15 @@
          top-1 style section
               ------------*/
     .container{
-    margin: 10px 100px;
+
+        width: 100%;
+padding: 20px;
         color: white;
-       
-        justify-content: center;
+           justify-content: center;
         align-items: center;
     }
     .top-1{ 
+        width: 95%;
         background-color: black;
         display: flex;
         align-content: center;
@@ -53,36 +55,72 @@
             ---------------------*/
             .top-2{
                 display: flex;
+                width: 90%;
             }
             .summary-item
             {
+                
                 background-color: rgb(107, 57, 57);
-                width:30%;
+                width:25%;
+               height: fit-content;
                 padding: 10px 20px;
                 height: 130px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+           
             }
-            .summary-item a{
+           a{
                 width: 50px;
                 padding: 10px 0px;
-                margin: 20px;
+                border-radius: 10px 10px;
+              
+              
                
                 text-decoration: none;
-                margin: 10px;
+         
                 align-items: center;
+             
 
             }
             .upcoming , .group-page , .blog-page {
                 margin: 5px 0;
-                padding: 5px;
+                padding: 10px 10px;
                 background-color: azure;
                 border-radius: 10px 10px;
+                display: flex;
+                justify-content: center;
+                display: inline;
             }
+           
+         a:hover{
+           
+            font-size: 20px;
+           }
             .blogs{
-                width: 75%;
+                width:100%;
                 margin-left: 20px;
                 background-color: aqua;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
             }
+            .blog img {
+            width: 70%;
+            }
+            .transfer a {
+                background-color: aliceblue;
+                padding: 5px;
+            }
+            .blog{
+               
+                margin: 10px;
+                padding: 10px;
+               border:2px solid ;
+               border-radius: 10px 10px 10px 10px;
+             width: 312px;
+             height: 365px;
+            }
+         .time-section span{
+            display: flex;
+            flex-direction: row-reverse;
+         }
