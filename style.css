@@ -3,9 +3,10 @@
               ------------*/
               body{
                font-family: 'Poppins', sans-serif;
+          
               }
               main{
-               max-width: 1200px;
+               max-width: 100%;
                margin: 0 auto;
               }
     .container{
@@ -15,18 +16,18 @@
         color: white;
            justify-content: center;
         align-items: center;
-        border: 2px solid cornflowerblue;
-        margin: 50px 0;
+        border: 2px solid rgb(0, 59, 168);
+        margin-top: 30px;
     }
     .top-1{ 
-        width: fit-content;
+        width: 100%;
         background-color: black;
         display: flex;
-        align-content: center;
-        justify-content: center;
+       margin: 0 auto;
    
+        padding-left:10px ;
      
-      padding: 0 20px;
+ 
      } 
      h1{
         font-size: 40px;
@@ -40,6 +41,9 @@
         display: flex;
         justify-content: baseline;
         padding: 0px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
      } 
 
      .live-link{
@@ -62,33 +66,35 @@
               top 1 style end
                      ---------------*/
 
+
  /*---------------
         top 2 section style start
             ---------------------*/
             .top-2{
                width: 100%;
                 display: flex;
-                width: fit-content;
+                  margin: 20px auto;
                 margin-top: 20px;
                 border: 2px solid darkmagenta;
-                padding: 10px;
+              
                 color: black;
             }
             .summary-item
             {
-                
-                background-color: rgb(107, 57, 57);
-                width:fit-content;
-               height:500px;
-                padding: 10px 20px;
-                height: 130px;
+                     
+                width:25%;
+              height: fit-content;
+           background-color: black;
+               margin: 20px;
+              
                 display: flex;
                 flex-direction: column;
+               
                 align-items: center;
-           
+               
             }
            a{
-                width: 50px;
+                width: 100%;
                 padding: 10px 0px;
                 border-radius: 10px 10px;
               
@@ -101,15 +107,18 @@
 
             }
             .upcoming , .group-page , .blog-page {
-                width: 200px;
-                height: 64px;
-                margin: 5px 0;
-                padding: 10px 10px;
-                background-color: azure;
+                width:50%;
+                
+                margin: 10px ;
+                padding: 10px;
+            
+                background-color: rgb(255, 255, 255);
                 border-radius: 10px 10px;
                 display: flex;
                 justify-content: center;
+
                 display: inline;
+                
             }
            
          a:hover{
@@ -117,15 +126,20 @@
             font-size: 20px;
            }
             .blogs{
-                width:95%;
-                margin-left: 20px;
+                width:80%;
+                margin:10px auto ;
+               font-size: 90%;
                 background-color: aqua;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                border:2px solid red
+                gap: 20px;
+                border:2px solid 
             }
+          
             .blog img {
-            width: 100%;
+            width: 90%;
+            display: flex;
+            align-items: center;
             }
             .transfer a {
                 background-color: aliceblue;
@@ -133,13 +147,13 @@
                 border: 1px solid;
             }
             .blog{
-               background-color: whitesmoke;
+               background-color: rgb(34, 0, 228);
                 margin: 10px;
-                padding: 10px;
+                padding: 10px 10px;
                border:2px solid ;
                border-radius: 10px 10px 10px 10px;
-             width: 250px;
-             height: 365px;
+            width: 90%;
+            
             }
          .time-section span{
             display: flex;
@@ -158,7 +172,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-             height: 444px;
+           
          }
          hr{
             width: 1000px;
@@ -182,3 +196,120 @@
             margin: 20px;
             color: chartreuse;
          }
+/*---------
+          mobile device
+               ----------*/
+         @media screen and (max-width: 687px) {
+         
+        body{
+         max-width: 100%;
+         margin: 0px;
+         background-color: coral;
+        }
+           main{
+            width: 100%;
+           }
+
+           
+           
+            .container{
+               width: 100%;
+               margin: 10px auto;
+               padding: 0px;
+               
+            }
+
+            .top-1{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               max-width:100%;
+               margin: 0 auto;
+            }
+            .elipsis{
+               width:300px;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+            }
+            .top-1 img {
+               width: 100%;
+            }
+            .top-1-blog{
+              width:100%;
+              margin: 10px auto;
+               align-items: center;
+            }
+            
+            
+            .top-2{
+               background-color: greenyellow;
+               max-width: 100%;
+               margin: 10px auto;
+              padding: 0px;
+               display: grid;
+               grid-template-columns: repeat(1,1fr);
+              justify-content: center;
+            }
+            .summary-item{
+               width: 50%;
+               display: grid;
+               justify-content: center;
+               align-items: center;
+              
+            }
+            .summary-item a :hover{
+               background-color: lightcoral;
+            }
+              
+
+        
+            .blogs{
+               display: grid;
+               grid-template-columns: repeat(1,1fr);
+               width: 100%;
+               margin: 5px 0;
+              
+            }
+            .blog{
+               width: 90%;
+               margin: 5px;
+             
+            }
+            .blog img {
+               width: 80%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            
+       
+        footer{
+         width: 100%;
+       
+        }
+         .footer-section{
+            max-width:100%;
+           border: 2px solid blue;
+            display:flex;
+            flex-direction: column;
+         }
+         .support-link a {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+          
+          width: auto;
+         }
+
+      }
+
+
+      /*-----------
+                tablet device
+                   -----------*/
+     
+      @media screen and (min-width:688px) and (max-width:992px) {
+         body{
+            width:100%
+         }
+      }             
