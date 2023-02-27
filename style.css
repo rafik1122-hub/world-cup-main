@@ -16,7 +16,7 @@
         color: white;
            justify-content: center;
         align-items: center;
-        border: 2px solid rgb(0, 59, 168);
+       
         margin-top: 30px;
     }
     .top-1{ 
@@ -75,7 +75,7 @@
                 display: flex;
                   margin: 20px auto;
                 margin-top: 20px;
-                border: 2px solid darkmagenta;
+               
               
                 color: black;
             }
@@ -129,11 +129,11 @@
                 width:80%;
                 margin:10px auto ;
                font-size: 90%;
-                background-color: aqua;
+                background-color:beige;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 gap: 20px;
-                border:2px solid 
+               
             }
           
             .blog img {
@@ -147,10 +147,11 @@
                 border: 1px solid;
             }
             .blog{
-               background-color: rgb(34, 0, 228);
+               background-color: beige;
+            box-shadow:rgb(129, 43, 43) 10px 10px 10px;
                 margin: 10px;
                 padding: 10px 10px;
-               border:2px solid ;
+              
                border-radius: 10px 10px 10px 10px;
             width: 90%;
             
@@ -165,6 +166,7 @@
             align-items: center;
             background-color: rgb(121, 21, 21);
             color: white;
+          padding: 20px;
            
          }
          .footer-section{
@@ -218,6 +220,9 @@
                padding: 0px;
                
             }
+            /*---------
+            top-1 section
+            -----------*/
 
             .top-1{
                display: flex;
@@ -241,9 +246,12 @@
                align-items: center;
             }
             
+            /*-----------
+             top-2 section
+             ------------*/
             
             .top-2{
-               background-color: greenyellow;
+               background-color: rgb(241, 241, 241);
                max-width: 100%;
                margin: 10px auto;
               padding: 0px;
@@ -253,9 +261,8 @@
             }
             .summary-item{
                width: 50%;
-               display: grid;
-               justify-content: center;
-               align-items: center;
+               margin: 10px auto;
+               background-color: navajowhite;
               
             }
             .summary-item a :hover{
@@ -274,6 +281,8 @@
             .blog{
                width: 90%;
                margin: 5px;
+               background-color: beige;
+               box-shadow:rgb(129, 43, 43) 10px 10px 10px;
              
             }
             .blog img {
@@ -290,7 +299,7 @@
         }
          .footer-section{
             max-width:100%;
-           border: 2px solid blue;
+          
             display:flex;
             flex-direction: column;
          }
@@ -309,7 +318,48 @@
                    -----------*/
      
       @media screen and (min-width:688px) and (max-width:992px) {
-         body{
-            width:100%
+         .top-1{
+            width: 100%;
          }
+         .top-1 img{width: 90%;}
+         .top-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: navajowhite;
+         }
+         .summary-item{
+            width: 100%;
+            display: flex;
+            background-color: navajowhite;
+         }
+         .summary-item a{
+            display: flex;
+         }
+         .content{
+            display: flex;
+         }
+         .blogs{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px    ;
+            background-color: navajowhite;
+         }
+         .blog{
+            width: 90%;
+            background-color: beige;
+            box-shadow:rgb(129, 43, 43) 10px 10px 10px;
+         }
+
+         .support-link{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 5px;
+         }
+         .support-link a{
+            margin: 0px;
+            padding: 5px;
+         }
+
       }             
