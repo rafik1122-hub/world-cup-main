@@ -15,12 +15,19 @@
 
 <style>
     
-
+.container{
+    width: 100%;
+}
     .blog-1{
-        border: 1px solid purple;
+        border: 1px solid rgb(122, 179, 17);
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .top-2{
+        width: 100%;
+        background-color: rgb(145, 145, 11);
+        
     }
     .details-link a{
         background-color: chartreuse;
@@ -31,26 +38,31 @@
        flex-direction: column;
     }
     .blog-2{
-        border: 1px solid palevioletred;
+        border: 1px solid rgb(9, 224, 24);
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+      
     }
    .blog{
     border: 1px solid palegreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
     width: 100%;
     margin: 5px auto;
    }
     .country-flag{
         display: flex;
-        width: 80%;
+        width: 100%;
     }
 
     .country-flag img{
         margin:5px 10px;
     }
+
+    /*---------
+    mobile
+    -------------*/
     @media screen and(max-width:687px) {
         body{
             width: 100%;
@@ -68,18 +80,16 @@
             width: 100%;
             font-size: 10vw;
         }
-  
-    .blog-2{
-        display:flex;
-        grid-template-columns: repeat(1,1fr);
-        width: 100%;
-       
-    }
+  .top-2{
+    width:100%;
+  }
+   
+   
     .blog{
         width: 100%;
         margin: 5px auto;
 
-        display: fl;
+      
     }
         
 }  
@@ -131,11 +141,12 @@
                     <h3>VS</h3>
                     <img src="assets/Flag.png" alt="">
                 </div>
+                
                 <div class="country-name">
                 <h2>Germany VS France</h2>
                 <p>April 01,2023, 1.00pm</p>
                 </div>
-            </div>
+          
             <div class="blog">
                 <div class="country-flag">
                     <img src="assets/germany Flag.png" alt="">
@@ -146,7 +157,7 @@
                 <h2>Germany VS France</h2>
                 <p>April 01,2023, 1.00pm</p>
                 </div>
-            </div>
+            
             <div class="blog">
                 <div class="country-flag">
                     <img src="assets/germany Flag.png" alt="">
@@ -192,7 +203,7 @@
                 </div>
             </div>
          </div>
-
+    </div>
     </div>
  </section>
     
